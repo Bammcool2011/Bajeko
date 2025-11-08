@@ -4,15 +4,15 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "prebuild": "bun lint && bun run typecheck && bun format:check",
+    "prebuild": "bun run lint && bun run typecheck && bun run format",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "lint": "eslint --fix .",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "typecheck": "tsc --noEmit",
-    "format": "prettier --write \"**/*.{vue}\"",
-    "format:check": "prettier --check \"**/*.{vue}\"",
+    "format": "prettier --write ./app",
+    "format:check": "prettier --check ./app",
     "prepare": "husky"
   },
   "dependencies": {
@@ -34,6 +34,7 @@
   "devDependencies": {
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
-    "husky": "^9.1.7"
+    "husky": "^9.1.7",
+    "prettier-plugin-tailwindcss": "^0.7.1"
   }
 }
