@@ -19,6 +19,7 @@ module.exports = [
   },
   {
     rules: {
+      // Disable all unicorn rules
       'unicorn/no-array-reduce': 'off',
       'unicorn/*': 'off',
     },

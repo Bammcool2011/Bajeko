@@ -7,7 +7,7 @@
     "prebuild": "bun run lint && bun run typecheck && bun run format",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "lint": "eslint --fix . 2>&1 | grep -v -E 'ExperimentalWarning|Support for loading ES Module|Use `node --trace-warnings.*to show where the warning was created' || true",
+    "lint": "eslint --fix . 2>&1 | grep -v -E 'ExperimentalWarning|Support for loading ES Module|Use `node --trace-warnings.*to show where the warning was created|Definition for rule.*was not found' || true",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "typecheck": "tsc --noEmit",
