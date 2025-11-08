@@ -1,0 +1,20 @@
+# Dependencies
+node_modules
+package-lock.json
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Config files
+.env
+.env.*
+
+# Logs
+*.log
+
+# Coverage
+coverage
+.nyc_output
